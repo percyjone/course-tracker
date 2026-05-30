@@ -41,13 +41,13 @@ pipeline {
 
         stage('Build Backend Image') {
             steps {
-                bat 'docker build -t %BACKEND_IMAGE% ./backend'
+                bat 'docker build -t %BACKEND_IMAGE% .'
             }
         }
 
         stage('Build Frontend Image') {
             steps {
-                bat 'docker build -t %FRONTEND_IMAGE% ./frontend'
+                bat 'docker build -t %FRONTEND_IMAGE% .'
             }
         }
 
