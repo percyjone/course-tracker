@@ -1,7 +1,6 @@
 pipeline {
 agent any
 
-```
 environment {
     FRONTEND_IMAGE = "coursetracker-frontend"
     BACKEND_IMAGE = "coursetracker-backend"
@@ -99,6 +98,6 @@ post {
         echo 'Pipeline Failed'
     }
 }
-```
+
 
 }
